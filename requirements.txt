@@ -1,0 +1,14 @@
+opencv-python
+numpy
+Pillow
+moviepy
+tqdm
+streamlit
+ultralytics
+easyocr
+
+# Optional (enable these if you want advanced features)
+# ultralytics   # YOLOv8 for object detection
+# easyocr       # OCR for text region detection
+# onnxruntime   # For certain model runtimes
+# scipy         # Warping utilities
