@@ -1,4 +1,6 @@
 import cv2, numpy as np
+from cv2 import TrackerCSRT_create
+print("Using OpenCV version:", cv2.__version__)
 
 class SimpleTracker:
     """Very basic CSRT tracker per target; placeholder for BYTE/DeepSORT."""
@@ -8,7 +10,7 @@ class SimpleTracker:
     def init(self, frame, boxes):
         self.trackers = []
         for (x,y,w,h) in boxes:
-            tracker = cv2.TrackerCSRT_create()
+            tracker = cv2.legacy.TrackerCSRT_create()
             tracker.init(frame, (x,y,w,h))
             self.trackers.append(tracker)
 
